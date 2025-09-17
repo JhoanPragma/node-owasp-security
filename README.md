@@ -3,8 +3,6 @@
 Un middleware de seguridad para Express.js(Node.js) que aplica de manera transversal las recomendaciones de seguridad de OWASP Top 10
 Incluye validaciones, middlewares y headers de seguridad listos para usar: HSTS, CSP, validación de payloads, SSRF protection, rate limiting, correlation IDs, métricas, etc.
 
---
-
 ## Características
 
 ✅ Middlewares de seguridad automáticos:
@@ -17,7 +15,6 @@ Incluye validaciones, middlewares y headers de seguridad listos para usar: HSTS,
 ✅ Compatible con Node.js 18+.
 ✅ Integración automática en proyectos Express.js.
 
---
 
 ## 📦 Instalación
 
@@ -25,10 +22,11 @@ Incluye validaciones, middlewares y headers de seguridad listos para usar: HSTS,
 
 En la raíz de tu proyecto crea un .npmrc:
 
-`@pragma:registry=https://npm.pkg.github.com`
+`@jhoanpragma:registry=https://npm.pkg.github.com`
 `//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}`
 
 `npm install @pragma/node-owasp-security`
+
 
 ### ⚙️ Configuración básica
 
@@ -53,7 +51,9 @@ app.get("/api/test", (req, res) => {
 
 app.listen(3000, () => console.log("Servidor en puerto 3000"));
 
+
 ### 📝 Ejemplos de uso
+
 
 1. Correlation ID automático
 
@@ -110,7 +110,7 @@ Incluye contadores como:
 
     security_ratelimit_blocked_count → requests bloqueados por rate limiting.
 
-### 📖 Configuración avanzada
+## 📖 Configuración avanzada
 
 Parámetros del middleware principal:
 
